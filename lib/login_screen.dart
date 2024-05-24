@@ -10,8 +10,10 @@ class LoginPage extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
+  LoginPage({super.key});
+
   Future<void> _login(BuildContext context) async {
-    final String apiUrl = '$ipAddress:3000/postUserLogin';
+    const String apiUrl = '$ipAddress:$portName/postUserLogin';
     final Map<String, String> postData = {
       'email': emailController.text,
       'password': passwordController.text,

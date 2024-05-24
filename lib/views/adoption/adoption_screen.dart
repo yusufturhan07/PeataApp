@@ -6,6 +6,8 @@ import 'package:mvc_uygun_peata_proje/views/adoption/adoption_detail_screen.dart
 import 'package:provider/provider.dart';
 
 class AdoptionScreen extends StatelessWidget {
+  const AdoptionScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
@@ -14,7 +16,7 @@ class AdoptionScreen extends StatelessWidget {
         body: Consumer<AdoptionController>(
           builder: (context, controller, child) {
             return controller.adoptionItems.isEmpty
-                ? Center(child: CircularProgressIndicator())
+                ? const Center(child: CircularProgressIndicator())
                 : RefreshIndicator(
                     onRefresh: controller.fetchDataFromAPI,
                     child: Column(
@@ -55,7 +57,7 @@ class AdoptionScreen extends StatelessWidget {
                               AdoptionItem item =
                                   controller.adoptionItems[index];
                               if (!controller.shouldDisplayCity(item.city)) {
-                                return SizedBox();
+                                return const SizedBox();
                               }
                               return GestureDetector(
                                 onTap: () {
@@ -116,7 +118,7 @@ class AdoptionScreen extends StatelessWidget {
                                                   alignment: Alignment.topLeft,
                                                   child: Text(
                                                     item.name,
-                                                    style: TextStyle(
+                                                    style: const TextStyle(
                                                       fontSize: 19,
                                                       color: Colors.deepOrange,
                                                       fontWeight:

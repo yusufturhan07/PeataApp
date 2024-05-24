@@ -5,7 +5,8 @@ class AdoptionDetailPage extends StatelessWidget {
   final String description;
   final String image;
 
-  AdoptionDetailPage({
+  const AdoptionDetailPage({
+    super.key,
     required this.name,
     required this.description,
     required this.image,

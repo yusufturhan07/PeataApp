@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mvc_uygun_peata_proje/controllers/adoption_controller.dart';
+import 'package:mvc_uygun_peata_proje/splash_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:mvc_uygun_peata_proje/login_screen.dart';
 import 'package:mvc_uygun_peata_proje/utils/global.dart';
@@ -16,7 +17,7 @@ void main() {
         ChangeNotifierProvider(create: (_) => ProfileController()),
       ],
       child: MaterialApp(
-        home: LoginPage(),
+        home: SplashScreen(),
       ),
     ),
   );
@@ -49,9 +50,9 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
 
   static final List<Widget> _widgetOptions = <Widget>[
-    AdoptionScreen(),
-    LostScreen(),
-    ProfileScreen(),
+    const AdoptionScreen(),
+    const LostScreen(),
+    const ProfileScreen(),
   ];
 
   @override

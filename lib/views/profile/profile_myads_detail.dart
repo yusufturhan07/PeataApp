@@ -12,7 +12,7 @@ class ProfileMyAdsDetail extends StatelessWidget {
   final String ad_id;
   final String userToken; // ProfileMyAdsDetail
 
-  ProfileMyAdsDetail({
+  const ProfileMyAdsDetail({
     required this.name,
     required this.description,
     required this.image,
@@ -67,7 +67,8 @@ class ProfileMyAdsDetail extends StatelessWidget {
             Text(description),
 
             ElevatedButton(
-                onPressed: () => _onDeleteAd(context), child: Text('Sil')),
+                onPressed: () => _onDeleteAd(context),
+                child: const Text('Sil')),
           ],
         ),
       ),
