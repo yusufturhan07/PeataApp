@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mvc_uygun_peata_proje/controllers/profile_controller.dart';
 import 'package:mvc_uygun_peata_proje/utils/global.dart';
-import 'package:mvc_uygun_peata_proje/views/profile/add_adoption_screen.dart';
+import 'package:mvc_uygun_peata_proje/views/profile/add_adoption_page.dart';
 import 'package:mvc_uygun_peata_proje/views/profile/profile_myads_detail.dart';
 import 'package:provider/provider.dart';
 import 'package:loading_animations/loading_animations.dart';
