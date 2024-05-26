@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mvc_uygun_peata_proje/controllers/adoption_controller.dart';
 import 'package:mvc_uygun_peata_proje/splash_screen.dart';
 import 'package:provider/provider.dart';
-import 'package:mvc_uygun_peata_proje/login_screen.dart';
+//import 'package:mvc_uygun_peata_proje/login_screen.dart';
 import 'package:mvc_uygun_peata_proje/utils/global.dart';
 import 'package:mvc_uygun_peata_proje/views/adoption/adoption_screen.dart';
 import 'package:mvc_uygun_peata_proje/views/lost/lost_screen.dart';
